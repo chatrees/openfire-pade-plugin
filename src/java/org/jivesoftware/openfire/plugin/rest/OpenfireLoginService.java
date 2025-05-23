@@ -23,7 +23,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import javax.servlet.ServletRequest;
+import jakarta.servlet.ServletRequest;
 import javax.security.auth.Subject;
 
 import org.eclipse.jetty.server.UserIdentity;
