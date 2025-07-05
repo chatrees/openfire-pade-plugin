@@ -20,16 +20,16 @@
 package org.jivesoftware.openfire.plugin.ofmeet;
 
 import org.dom4j.Element;
-import org.eclipse.jetty.ee8.webapp.WebAppContext;
-import org.eclipse.jetty.ee8.servlet.*;
-import org.eclipse.jetty.ee8.websocket.server.config.JettyWebSocketServletContainerInitializer;
-import org.eclipse.jetty.ee8.websocket.servlet.*;
-import org.eclipse.jetty.ee8.websocket.server.*;
-import org.eclipse.jetty.ee8.websocket.server.config.*;
+import org.eclipse.jetty.ee9.webapp.WebAppContext;
+import org.eclipse.jetty.ee9.servlet.*;
+import org.eclipse.jetty.ee9.websocket.server.config.JettyWebSocketServletContainerInitializer;
+import org.eclipse.jetty.ee9.websocket.servlet.*;
+import org.eclipse.jetty.ee9.websocket.server.*;
+import org.eclipse.jetty.ee9.websocket.server.config.*;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.apache.tomcat.InstanceManager;
 import org.apache.tomcat.SimpleInstanceManager;
@@ -80,7 +80,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.Security;
-import javax.servlet.DispatcherType;
+import jakarta.servlet.DispatcherType;
 import java.io.*;
 import java.net.*;
 import java.util.*;

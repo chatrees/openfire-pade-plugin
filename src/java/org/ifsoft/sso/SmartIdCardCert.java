@@ -9,11 +9,11 @@ import org.jivesoftware.openfire.http.HttpBindManager;
 import org.slf4j.*;
 import org.slf4j.Logger;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.ServletOutputStream;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletOutputStream;
 
 import java.io.*;
 import java.net.*;
@@ -37,7 +37,7 @@ public class SmartIdCardCert extends HttpServlet
             String hostname = XMPPServer.getInstance().getServerInfo().getHostname();
             String domain = XMPPServer.getInstance().getServerInfo().getXMPPDomain();
 
-            X509Certificate[] certs = (X509Certificate[]) request.getAttribute("javax.servlet.request.X509Certificate");
+            X509Certificate[] certs = (X509Certificate[]) request.getAttribute("jakarta.servlet.request.X509Certificate");
 
             if (certs != null && certs.length > 1)
             {

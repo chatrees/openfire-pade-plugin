@@ -9,11 +9,11 @@ import org.jivesoftware.openfire.http.HttpBindManager;
 import org.slf4j.*;
 import org.slf4j.Logger;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.ServletOutputStream;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletOutputStream;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

@@ -6,12 +6,12 @@
     <parent>
         <artifactId>plugins</artifactId>
         <groupId>org.igniterealtime.openfire</groupId>
-        <version>5.0.0</version>
+        <version>5.0.1-jakarta-04072025</version>
     </parent>
     
     <groupId>org.igniterealtime.openfire</groupId>
     <artifactId>pade</artifactId>
-    <version>1.9.1</version>	
+    <version>1.9.1-jakarta-05072025</version>	
     
     <name>Pade</name>
     <description>Web-based chat, groupchat, telephones, audio and video conferencing solution using ConverseJS, Jitsi and FreeSWITCH</description>
@@ -97,8 +97,8 @@
                 <artifactId>maven-assembly-plugin</artifactId>
             </plugin>
 			<plugin>
-				<groupId>org.eclipse.jetty.ee8</groupId>
-				<artifactId>jetty-ee8-jspc-maven-plugin</artifactId>
+				<groupId>org.eclipse.jetty.ee9</groupId>
+				<artifactId>jetty-ee9-jspc-maven-plugin</artifactId>
 			</plugin>          
         </plugins>
     </build>
@@ -316,8 +316,8 @@
         <!-- https://mvnrepository.com/artifact/com.github.waffle/waffle-jna -->
         <dependency>
             <groupId>com.github.waffle</groupId>
-            <artifactId>waffle-jna</artifactId>
-            <version>1.9.1</version>
+            <artifactId>waffle-jna-jakarta</artifactId>
+            <version>3.5.1</version>
         </dependency>
         
         <!-- https://mvnrepository.com/artifact/com.github.davidmoten/subethasmtp -->
@@ -385,8 +385,8 @@
         </dependency> 
 		
 		<dependency>
-			<groupId>org.eclipse.jetty.ee8.websocket</groupId>
-			<artifactId>jetty-ee8-websocket-jetty-client</artifactId>
+			<groupId>org.eclipse.jetty.ee9.websocket</groupId>
+			<artifactId>jetty-ee9-websocket-jetty-client</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>	
 
@@ -405,10 +405,10 @@
 		</dependency>
 
         <dependency>
-            <groupId>org.eclipse.jetty.ee8.websocket</groupId>
-            <artifactId>jetty-ee8-websocket-jetty-server</artifactId>
+            <groupId>org.eclipse.jetty.ee9.websocket</groupId>
+            <artifactId>jetty-ee9-websocket-jetty-server</artifactId>
             <version>${jetty.version}</version>
-        </dependency>	
+        </dependency>
 
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
