@@ -113,10 +113,10 @@ public class JitsiJicofoWrapper implements ProcessListener
         props.setProperty( "org.jitsi.jicofo.SERVICE_REDISCOVERY_INTERVAL", "60000" );
         props.setProperty( "org.jitsi.jicofo.DISABLE_AUTO_OWNER", Boolean.toString( !JiveGlobals.getBooleanProperty( "ofmeet.conference.auto-moderator", true ) ) );
 
-        props.setProperty( "org.jitsi.jicofo.ENABLE_H264", Boolean.toString( !JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.vp9", false ) && !JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.av1", true ) ) );
-        props.setProperty( "org.jitsi.jicofo.ENABLE_VP8", Boolean.toString( !JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.vp9", false ) && !JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.av1", true ) ) );
-        props.setProperty( "org.jitsi.jicofo.ENABLE_VP9", Boolean.toString( JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.vp9", false ) && !JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.av1", true ) ) );
-        props.setProperty( "org.jitsi.jicofo.ENABLE_AV1", Boolean.toString( JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.av1", true ) && !JiveGlobals.getBooleanProperty( "ofmeet.jicofo.force.vp9", false ) ) );
+        props.setProperty( "org.jitsi.jicofo.ENABLE_H264", "true");
+        props.setProperty( "org.jitsi.jicofo.ENABLE_VP8",  "true");
+        props.setProperty( "org.jitsi.jicofo.ENABLE_VP9",  "true");
+        props.setProperty( "org.jitsi.jicofo.ENABLE_AV1",  "true");
 		
         Log.debug("sip-communicator.properties");
 
@@ -196,7 +196,7 @@ public class JitsiJicofoWrapper implements ProcessListener
 				MUCRoom mucRoom = mucService.getChatRoom(roomName, new JID("admin@" + XMPPServer.getInstance().getServerInfo().getXMPPDomain()));
 				mucRoom.setPersistent(false);
 				mucRoom.setPublicRoom(false);
-				mucRoom.unlock(mucRoom.getRole());
+				mucRoom.unlock(mucRoom.getSelfRepresentation().getAffiliation());
 			} catch (Exception e) {
 				Log.error("Cannot create MUC room", e);
 			}	
