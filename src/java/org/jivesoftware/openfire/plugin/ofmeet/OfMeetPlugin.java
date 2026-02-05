@@ -20,12 +20,12 @@
 package org.jivesoftware.openfire.plugin.ofmeet;
 
 import org.dom4j.Element;
-import org.eclipse.jetty.ee8.webapp.WebAppContext;
-import org.eclipse.jetty.ee8.servlet.*;
-import org.eclipse.jetty.ee8.websocket.server.config.JettyWebSocketServletContainerInitializer;
-import org.eclipse.jetty.ee8.websocket.servlet.*;
-import org.eclipse.jetty.ee8.websocket.server.*;
-import org.eclipse.jetty.ee8.websocket.server.config.*;
+import org.eclipse.jetty.ee9.webapp.WebAppContext;
+import org.eclipse.jetty.ee9.servlet.*;
+import org.eclipse.jetty.ee9.websocket.server.config.JettyWebSocketServletContainerInitializer;
+import org.eclipse.jetty.ee9.websocket.servlet.*;
+import org.eclipse.jetty.ee9.websocket.server.*;
+import org.eclipse.jetty.ee9.websocket.server.config.*;
 
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;

@@ -15,9 +15,9 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.ee8.websocket.api.annotations.*;
-import org.eclipse.jetty.ee8.websocket.api.Session;
-import org.eclipse.jetty.ee8.websocket.api.RemoteEndpoint;
+import org.eclipse.jetty.ee9.websocket.api.annotations.*;
+import org.eclipse.jetty.ee9.websocket.api.Session;
+import org.eclipse.jetty.ee9.websocket.api.RemoteEndpoint;
 
 import org.jivesoftware.util.ParamUtils;
 
