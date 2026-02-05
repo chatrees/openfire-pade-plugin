@@ -31,8 +31,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import org.apache.tomcat.InstanceManager;
-import org.apache.tomcat.SimpleInstanceManager;
 import org.apache.commons.io.FileUtils;
 
 import org.ice4j.ice.harvest.MappingCandidateHarvesters;
